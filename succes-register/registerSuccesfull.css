@@ -1,0 +1,204 @@
+header{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    background-color: #00204b;
+    align-items: center;
+    padding: 2px;
+    box-shadow: 0 4px 8px black;
+}
+
+header h1{
+    margin-left: 15pt;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 10px;
+    height: 45px;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #385173;
+    align-items: center;
+    display: grid;
+}
+
+.info{
+    background-position:center;    
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    padding-top: 80pt;
+    padding-bottom: 220pt;
+    padding: auto;
+    background-image: url(../img/fotoIntro.png);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    width: 100%; 
+    gap: 0;
+}   
+
+.info h1.text1{
+    margin-top: -60px;
+}
+
+.info h1{
+    margin-bottom: -20px;
+}
+
+:root{
+    --color: greenyellow
+}
+
+.botones{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    gap:25px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 5px;
+    transition: all 0.6s ease;
+    flex-grow: 999;
+    width: 100%;
+    padding-top: 50pt;
+    z-index: -1;
+}
+
+.btn1{
+    position: relative;
+    padding: 20px 70px;
+    text-decoration: none;
+    color: white;
+
+    border: 6px solid;
+    border-radius: 60px;
+    transition: all 0.6s ease;
+    background-color: #173054;
+}
+
+.btn1:hover{
+    background-color: rgba(0,0,0,0);
+    box-shadow: 0 0 20px var(--color);
+    border-color: var(--color);
+    transition: all 0.6s ease;
+    background-color: #1c3b66;
+}
+
+.fot1{
+    margin-top: -15px;
+    margin-left: -130px;
+}
+
+.fot1 img{
+    height: 260px;
+}
+
+.fot2{
+    margin-top: -60px;
+}
+
+.fot3 img{
+    height: 200px;
+}
+
+.redes h3{
+    margin-top: -15px;
+    margin-bottom: 20px;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.redes .button{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: #033069;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+}
+
+.redes .button:hover{
+    width: 200px;
+}
+
+.redes .button .icon{
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.redes .button:nth-child(2):hover .icon{
+    background: linear-gradient(rgb(7, 0, 135),rgb(30, 0, 255));
+}
+.redes .button:nth-child(3):hover .icon{
+    background: linear-gradient(rgb(244, 0, 195),rgb(255, 255, 3));
+}
+.redes .button:nth-child(4):hover .icon{
+    background: linear-gradient(rgb(80, 43, 232),rgb(84, 205, 246));
+}
+.redes .button:nth-child(5):hover .icon{
+    background: linear-gradient(rgb(0, 0, 0),rgb(45, 45, 45));
+}
+
+.redes .button .icon i{
+   font-size: 25px;
+   line-height: 60px;
+   transition: all 0.3s ease-out;
+}
+
+.redes .button span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 60px;
+    margin-left: 10px;
+    transition: all 0.3s ease-out;
+}
+
+footer{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    background-color: #00204b;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 200px;
+    box-shadow: 0 -4px 18px black;
+}
+
+footer h3{
+    text-align: left;
+    margin-bottom: -15px;
+}
