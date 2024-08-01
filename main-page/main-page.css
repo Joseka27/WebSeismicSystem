@@ -1,0 +1,457 @@
+/*Forma del cuerpo*/
+body{
+    margin: 0;
+    background-color: #385173;
+}
+
+/*Efecto rgp para botones*/
+:root{
+    --color: greenyellow
+}
+
+/*Ajustes de la cabecera*/
+header{
+    /*Texto*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    color: white;
+
+    /*Display*/
+    display: flex;
+    justify-content: space-between;
+    background-color: #00204b;
+    padding: 2px;
+    box-shadow: 0 4px 8px black;
+}
+
+.cabecera{
+    /*Display de contenedor del header*/
+    display: flex;
+    align-items: center;
+}
+
+.cabecera img{
+    /*controlar tamaño imagen*/
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 10px;
+    height: 45px;
+}
+
+/*Ajustes de la informacion del cuerpo*/
+.entrada{
+    /*Texto*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6vw;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+
+    /*Display*/
+    display: flex;
+    background-image: url(../images/rad.png);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-position: center;
+    box-shadow: 0 4px 8px black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Ajustes del texto de la entrada introductoria*/
+.entrada h3{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    max-width: 40%;
+}
+
+/*Ajustes de los botnes*/
+.botones{
+    /*Texto*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2vw;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    /*Display*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s ease;
+    flex-grow: 999;
+    width: 100%;
+    gap:25px;
+    flex-wrap: wrap;
+    z-index: -1;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+/*Config Boton 1*/
+.btn1{
+    /*Display*/
+    position: relative;
+    padding: 1.3vw 12vw;
+    text-decoration: none;
+    color: white;
+    
+    border: 0.3vw solid;
+    border-radius: 60px;
+    transition: all 0.6s ease;
+    margin-right: 4vw;
+}
+
+.btn1:hover{
+    background-color: #2b4263;
+    box-shadow: 0 0 20px var(--color);
+    border-color: var(--color);
+    transition: all 0.6s ease;
+}
+
+/*Config Boton 2*/
+.btn2{
+    position: relative;
+    padding: 1.3vw 11vw;
+    text-decoration: none;
+    color: white;
+    
+    border: 0.3vw solid;
+    border-radius: 60px;
+    transition: all 0.6s ease;
+    margin-left: 4vw;
+}
+
+.btn2:hover{
+    background-color: #2b4263;
+    box-shadow: 0 0 20px var(--color);
+    border-color: var(--color);
+    transition: all 0.6s ease;
+}
+
+/*Ajuste del register modal*/
+.register-modal {
+    /*Texto*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7vw;
+    font-weight: bold;
+    color: white;
+
+    /*Display*/
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.entradaModals{
+     /*Texto*/
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     font-size: 0.7vw;
+     font-weight: bold;
+     color: white;
+
+     /*Display*/
+    display: flex;
+    align-items: center;
+    margin-left: 9vw;
+}
+
+.entradaModals img{
+    align-items: center;
+    margin-left: 0.5vw;
+    margin-right: 0.7vw;
+    height: 2.6vw;
+}
+
+.login-modal {
+    /*Texto*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7vw;
+    font-weight: bold;
+    color: white;
+
+    /*Display*/
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/*Ajuste tamaño del h3*/
+.register-modal h3{
+    text-align: center;
+}
+
+.login-modal h3{
+    text-align: center;
+}
+
+/*ajuste del modal*/
+.register-content {
+    background-color: #2b4263;
+    padding: 1.2vw;
+    border-radius: 0.2vw;
+    width: 80%;
+    max-width: 30vw;
+    position: relative;
+}
+
+.login-content {
+    background-color: #2b4263;
+    padding: 1.2vw;
+    border-radius: 0.2vw;
+    width: 80%;
+    max-width: 30vw;
+    position: relative;
+}
+
+.cerrar-register {
+    color: #ffffff;
+    position: absolute;
+    top: 0.2vw;
+    right: 1vw;
+    font-size: 1.6vw;
+    font-weight: bold;
+}
+
+.cerrar-login {
+    color: #ffffff;
+    position: absolute;
+    top: 0.2vw;
+    right: 1vw;
+    font-size: 1.6vw;
+    font-weight: bold;
+}
+
+.cerrar-register:hover,
+.cerrar-register:focus {
+    color: rgb(194, 194, 194);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cerrar-login:hover,
+.cerrar-login:focus {
+    color: rgb(194, 194, 194);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+form label {
+    display: block;
+    margin-top: 0.5vw;
+}
+
+form input, form select {
+    /*Texto*/
+    font-size: 0.9vw;
+    color: rgb(0, 0, 0);
+
+    /*Display*/
+    width: 100%;
+    padding: 0.4vw;
+    max-height: 3vw;
+    margin: 0.2vw 0 0.2vw 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form input:focus, form select:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+form button {
+    background-color: #35bb39;
+    color: white;
+    font-size: 1vw;
+    padding: 0.7vw 1.2vw;
+    margin: 0.8vw 0;
+    border: none;
+    cursor: pointer;
+    width: 7vw;
+    height: 2.5vw;
+    border-radius: 3px;
+}
+
+form button:hover {
+    background-color: #29922d;
+}
+
+#nextBtn {
+    padding: 0.7vw 1.2vw;
+    float: right; 
+}
+
+#prevBtn {
+    padding: 0.7vw 1.2vw;
+    float: left;
+}
+
+#subBtn {
+    padding: 0.7vw 1.2vw;
+    float: right;
+}
+
+#enterBtn {
+    padding: 0.7vw 1.2vw;
+    float: right;
+}
+
+select{
+    /*Texto*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7vw;
+    color: rgb(0, 0, 0);
+}
+
+.birthday-container {
+    display: flex;
+    gap: 1vw;
+}
+
+.password-strength {
+    display: flex;
+    margin-top: 0.01vw;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.password-strength label {
+    margin-top: 0.2vw;
+}
+
+.password-strength-text {
+    margin-top: 0.2vw;
+    margin-left: -10vw;
+}
+
+.password-strength-bar {
+    margin-top: 0.2vw;
+    height: 0.6vw;
+    width: 6vw;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    position: relative;
+}
+
+.password-strength-bar::after {
+    content: "";
+    display: block;
+    height: 100%;
+    background-color: red;
+    width: 0;
+    border-radius: 5px;
+    transition: width 0.5s;
+}
+
+
+/*Ajuste del footer*/
+footer{
+    /*Texto*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-size: 1.2vw;
+    text-align: left;
+
+    /*Display*/
+    background-color: #00204b;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    box-shadow: 0 -4px 18px black;
+}
+
+/*Ajustes de palo que divide*/
+.foot-divider{
+    margin-top: 1.7%;
+}
+
+.foot-divider img{
+    height: 10vw;
+}
+
+/*Ajuste del los botones de redes*/
+.foot-medias h3{
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2vw;
+    padding: 0.8vw;
+    text-align: center;
+}
+
+.foot-medias .button{
+    display: inline-block;
+    height: 3vw;
+    width: 3vw;
+    margin: 0 0.2vw;
+    overflow: hidden;
+    background: #033069;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease-out;
+}
+
+.foot-medias .button:hover{
+    width: 10vw;
+}
+
+.foot-medias .button .icon{
+    display: inline-block;
+    height: 3vw;
+    width: 3vw;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 3vw;
+    transition: all 0.3s ease-out;
+}
+
+.foot-medias .button:nth-child(2):hover .icon{
+    background: linear-gradient(rgb(7, 0, 135),rgb(30, 0, 255));
+}
+.foot-medias .button:nth-child(3):hover .icon{
+    background: linear-gradient(rgb(244, 0, 195),rgb(255, 255, 3));
+}
+.foot-medias .button:nth-child(4):hover .icon{
+    background: linear-gradient(rgb(80, 43, 232),rgb(84, 205, 246));
+}
+.foot-medias .button:nth-child(5):hover .icon{
+    background: linear-gradient(rgb(0, 0, 0),rgb(45, 45, 45));
+}
+
+.foot-medias .button .icon i{
+   font-size: 1.3vw;
+   line-height: 3vw;
+   transition: all 0.3s ease-out;
+}
+
+.foot-medias .button span{
+    font-size: 1.1vw;
+    font-weight: 500; 
+    margin-left: 0.5vw;
+    transition: all 0.3s ease-out;
+}
