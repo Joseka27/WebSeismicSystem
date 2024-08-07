@@ -10,15 +10,8 @@
 
 body{
     font-family: 'Poppins',sans-serif;
-    background-color: #385173;
 }
 
-/*Efecto rgp para botones*/
-:root{
-    --color: greenyellow
-}
-
-/*Ajustes de la cabecera*/
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -33,12 +26,6 @@ body{
 
     display: flex;
     align-items: center;
-}
-
-p{
-    font-size: 16px;
-    color: gray;
-    margin: 25px 0 45px 0;
 }
 
 .menu{
@@ -101,7 +88,6 @@ p{
     color: white;
     text-transform: uppercase;
     margin-bottom: 35px;
-    margin-top: 85px;
 }
 
 .header-content p{
@@ -111,44 +97,180 @@ p{
     margin-bottom: 25px;
 }
 
-/*Ajustes de los botnes*/
-.botones{
-    /*Texto*/
-    font-size: 30px;
-    font-weight: bold;
-    letter-spacing: 3px;
-
-    /*Display*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.6s ease;
-    flex-grow: 999;
-    width: 100%;
-    gap:25px;
-    flex-wrap: wrap;
-    z-index: -1;
-    margin-top: 7%;
-    margin-bottom: 7%;
-}
-
-/*Config Boton 1*/
-.btn1{
-    /*Display*/
+.SobreSismos{
+    padding: 100px 0;
+    background-color: #fffDfc;
     position: relative;
-    padding: 25px 180px;
-    text-decoration: none;
-    color: white;
-    
-    border: 5px solid;
-    border-radius: 60px;
-    transition: all 0.6s ease;
 }
 
-.btn1:hover{
-    box-shadow: 0 0 20px var(--color);
-    border-color: var(--color);
-    transition: all 0.6s ease;
+.SobreSismos-content{
+    text-align: center;
+}
+
+.SobreSismos-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color:  black;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.txt-p{
+    font-size: 16px;
+    color: gray;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.SobreSismos-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.SobreSismos-info{
+    padding: 0 25px;
+}
+
+.SobreSismos-info img{
+    width: 200px;
+}
+
+.SobreSismos-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.SobreSismos-info h3{
+    color: black;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.SobreSismos-info img{
+    border-radius: 10px;
+}
+
+.SobreSismos-info p {
+    max-width: 230px;
+}
+
+.Busquedas{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/rad.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-repeat: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.Busquedas-content{
+    text-align: center;
+}
+
+.Busquedas-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.Busquedas table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 7px;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5) ;
+    color: white;
+    text-transform: uppercase;
+}
+
+.Busquedas img{
+    margin-bottom: 55px;
+}
+
+.Busquedas table, th, td {
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.Busquedas th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.Busquedas th {
+    background-color: rgba(21, 153, 241, 0.5);
+}
+
+h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: gray;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 16px;
+    color: gray;
+    margin: 25px 0 45px 0;
+}
+
+.Prevencion{
+    padding: 100px 0;
+    background-color: #fffDfc;
+    position: relative;
+}
+
+.Prevencion-content{
+    text-align: center;
+}
+
+.Prevencion-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color:  black;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+}
+
+.Prevencion-group{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.Prevencion-info{
+    padding: 0 25px;
+}
+
+.Prevencion-info img{
+    width: 200px;
+}
+
+.Prevencion-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.Prevencion-info h3{
+    color: black;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.Prevencion-info img{
+    border-radius: 10px;
+}
+
+.Prevencion-info p {
+    max-width: 230px;
 }
 
 .Footer{
@@ -263,6 +385,7 @@ p{
     position: absolute ;
 }
 
+
 @media(max-width:991px){
     .menu{
         padding: 30px;
@@ -301,13 +424,73 @@ p{
         padding: 0;
     }
 
-    .botones{
-        flex-direction: column;
+    .SobreSismos{
+        padding: 30px;
     }
 
-    .btn1{
-        margin-right: 0;
-        margin-left: 0;
+    .SobreSismos-content h2{
+        padding: 0;
+    }
+
+    .txt-p{
+        padding: 0;
+    }
+
+    .SobreSismos-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .SobreSismos-img{
+        display: none;
+    }
+
+    .SobreSismos-info p {
+        max-width: 1000px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .Busquedas{
+        padding: 30px;
+    }
+
+    .Busquedas-content p{
+        padding: 0;
+    }
+
+    .Busquedas-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .Busquedas-info{
+        margin-bottom: 25px;
+    }
+
+    .Prevencion{
+        padding: 30px;
+    }
+
+    .Prevencion-content h2{
+        padding: 0;
+    }
+
+    .Prevencion-group{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .Prevencion-img{
+        display: none;
+    }
+
+    .Prevencion-info p {
+        max-width: 1000px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     .Footer{
@@ -341,6 +524,4 @@ p{
     #NR1{
         position: relative;
     }
-
 }
-

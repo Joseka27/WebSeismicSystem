@@ -1,6 +1,15 @@
-/*Forma del cuerpo*/
-body{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
     background-color: #385173;
 }
 
@@ -10,66 +19,101 @@ body{
 }
 
 /*Ajustes de la cabecera*/
-header{
-    /*Texto*/
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 12px;
-    color: white;
-
-    /*Display*/
-    display: flex;
-    justify-content: space-between;
-    background-color: #00204b;
-    padding: 2px;
-    box-shadow: 0 4px 8px black;
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.cabecera{
-    /*Display de contenedor del header*/
-    display: flex;
-    align-items: center;
-}
-
-.cabecera img{
-    /*controlar tamaño imagen*/
-    align-items: center;
-    margin-left: 5px;
-    margin-right: 10px;
-    height: 45px;
-}
-
-/*Ajustes de la informacion del cuerpo*/
-.entrada{
-    /*Texto*/
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 1.6vw;
-    color: rgb(255, 255, 255);
-    letter-spacing: 1px;
-
-    /*Display*/
-    display: flex;
-    background-image: url(../images/rad.png);
-    background-repeat: no-repeat;
-    background-size: cover;  
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../images/rad.png);
     background-position: center;
-    box-shadow: 0 4px 8px black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+
+    display: flex;
     align-items: center;
-    justify-content: center;
+}
+
+p{
+    font-size: 16px;
+    color: gray;
+    margin: 25px 0 45px 0;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu img{
+    width: 50px;
+}
+
+.logo{
+    color: #fffDfc;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #fffDfc;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover{
+    color: rgb(31, 53, 255);
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
     text-align: center;
 }
 
-/*Ajustes del texto de la entrada introductoria*/
-.entrada h3{
-    margin-top: 5%;
-    margin-bottom: 5%;
-    max-width: 40%;
+.header-content h1{
+    font-size: 75px;
+    line-height: 80px;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p{
+    font-size: 16px;
+    color:white;
+    padding: 0 250px;
+    margin-bottom: 25px;
 }
 
 /*Ajustes de los botnes*/
 .botones{
     /*Texto*/
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 2vw;
+    font-size: 30px;
     font-weight: bold;
     letter-spacing: 3px;
 
@@ -91,14 +135,13 @@ header{
 .btn1{
     /*Display*/
     position: relative;
-    padding: 1.3vw 12vw;
+    padding: 25px 180px;
     text-decoration: none;
     color: white;
     
-    border: 0.3vw solid;
+    border: 5px solid;
     border-radius: 60px;
     transition: all 0.6s ease;
-    margin-right: 4vw;
 }
 
 .btn1:hover{
@@ -111,14 +154,13 @@ header{
 /*Config Boton 2*/
 .btn2{
     position: relative;
-    padding: 1.3vw 11vw;
+    padding: 25px 155px;
     text-decoration: none;
     color: white;
     
-    border: 0.3vw solid;
+    border: 5px solid;
     border-radius: 60px;
     transition: all 0.6s ease;
-    margin-left: 4vw;
 }
 
 .btn2:hover{
@@ -131,7 +173,6 @@ header{
 /*Ajuste del register modal*/
 .register-modal {
     /*Texto*/
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 0.7vw;
     font-weight: bold;
     color: white;
@@ -153,7 +194,6 @@ header{
 
 .entradaModals{
      /*Texto*/
-     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      font-size: 0.7vw;
      font-weight: bold;
      color: white;
@@ -173,7 +213,6 @@ header{
 
 .login-modal {
     /*Texto*/
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 0.7vw;
     font-weight: bold;
     color: white;
@@ -318,7 +357,6 @@ form button:hover {
 
 select{
     /*Texto*/
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 0.7vw;
     color: rgb(0, 0, 0);
 }
@@ -365,50 +403,66 @@ select{
 }
 
 
-/*Ajuste del footer*/
-footer{
-    /*Texto*/
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: white;
-    font-size: 1.2vw;
-    text-align: left;
-
-    /*Display*/
+.Footer{
+    padding: 100px 0;
     background-color: #00204b;
-    padding: 1%;
+    position: relative;
+}
+
+.Footer-group{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    box-shadow: 0 -4px 18px black;
+    margin-bottom: 50px;
 }
 
-/*Ajustes de palo que divide*/
-.foot-divider{
-    margin-top: 1.7%;
-}
-
-.foot-divider img{
-    height: 10vw;
-}
-
-/*Ajuste del los botones de redes*/
-.foot-medias h3{
+.Footer-info{
+    padding: 0 25px;
     color: white;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.2vw;
-    padding: 0.8vw;
-    text-align: center;
+}
+
+.Footer-info img{
+    width: 200px;
+}
+
+.Footer-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.Footer-info h3{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.Footer-info p {
+    color: white;
+    text-align: left;
+}
+
+#btn1{
+    margin-top: 80px;
+}
+#btn2{
+    margin-top: 80px;
+}
+#btn3{
+    margin-top: 80px;
+}
+#btn4{
+    margin-top: 80px;
 }
 
 .foot-medias .button{
     display: inline-block;
-    height: 3vw;
-    width: 3vw;
-    margin: 0 0.2vw;
+    height: 60px;
+    width: 60px;
+    float: left;
+    margin: 0 5px;
     overflow: hidden;
-    background: #033069;
+    background: #0353bb;
     border-radius: 50px;
     cursor: pointer;
     box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
@@ -416,42 +470,134 @@ footer{
 }
 
 .foot-medias .button:hover{
-    width: 10vw;
+    width: 200px;
 }
 
 .foot-medias .button .icon{
     display: inline-block;
-    height: 3vw;
-    width: 3vw;
+    height: 60px;
+    width: 60px;
     text-align: center;
     border-radius: 50px;
     box-sizing: border-box;
-    line-height: 3vw;
+    line-height: 60px;
     transition: all 0.3s ease-out;
 }
 
-.foot-medias .button:nth-child(2):hover .icon{
+#btn1:nth-child(1):hover .icon{
     background: linear-gradient(rgb(7, 0, 135),rgb(30, 0, 255));
 }
-.foot-medias .button:nth-child(3):hover .icon{
+#btn2:nth-child(1):hover .icon{
     background: linear-gradient(rgb(244, 0, 195),rgb(255, 255, 3));
 }
-.foot-medias .button:nth-child(4):hover .icon{
+#btn3:nth-child(1):hover .icon{
     background: linear-gradient(rgb(80, 43, 232),rgb(84, 205, 246));
 }
-.foot-medias .button:nth-child(5):hover .icon{
+#btn4:nth-child(1):hover .icon{
     background: linear-gradient(rgb(0, 0, 0),rgb(45, 45, 45));
 }
 
 .foot-medias .button .icon i{
-   font-size: 1.3vw;
-   line-height: 3vw;
+   font-size: 25px;
+   line-height: 60px;
    transition: all 0.3s ease-out;
 }
 
 .foot-medias .button span{
-    font-size: 1.1vw;
+    font-size: 20px;
     font-weight: 500; 
-    margin-left: 0.5vw;
+    line-height: 60px;
+    margin-left: 10px;
     transition: all 0.3s ease-out;
 }
+
+#NR1{
+    position: absolute ;
+}
+
+@media(max-width:991px){
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #4a4b4d;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header{
+        min-height: 0vh;
+    }
+
+    .header-content{
+        padding: 100px 30px;
+    }
+
+    .header-content p{
+        padding: 0;
+    }
+
+    .botones{
+        flex-direction: column;
+    }
+
+    .btn1{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .btn2{
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .Footer{
+        padding: 30px;
+    }
+
+    .Footer-content h2{
+        padding: 0;
+    }
+
+    .Footer-content h3{
+        padding: 0;
+        text-align: center;
+    }
+
+    .Footer-group{
+        flex-direction: column;
+    }
+
+    .Footer-info img{
+        display: none;
+    }
+
+    .Footer-info p {
+        max-width: 1000px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #NR1{
+        position: relative;
+    }
+
+}
+
